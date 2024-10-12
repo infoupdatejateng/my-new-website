@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Berita</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <meta name="description" content="Stay updated with the latest news in technology, business, and health.">
+    <meta name="keywords" content="news, technology, business, health">
+    <meta name="author" content="Your Name">
+    </head>
 <body>
     <header>
         <h1>Info Update Jateng</h1>
+        <div class="mobile-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>        
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -17,6 +25,7 @@
                 <li><a href="#">Kontak</a></li>
             </ul>
         </nav>
+        <input type="text" id="searchInput" placeholder="Search articles..." />
     </header>
 
     <main>
@@ -36,12 +45,31 @@
     <footer>
         <p>&copy; 2024 Website Berita. Semua Hak Cipta Dilindungi.</p>
     </footer>
+    <script src="script.js"></script>
+<!-- Modal Structure -->
+<div id="newsModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Article Title</h2>
+        <p>This is the content of the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
 </body>
 </html>
-<script src="script.js"></script>
 <article>
     <h2>Judul Berita dengan Gambar</h2>
     <img src="path/to/image.jpg" alt="Gambar Berita">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla metus sit amet massa ultricies.</p>
     <a href="#">Baca selengkapnya</a>
 </article>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'YOUR_TRACKING_ID');
+</script>
+
